@@ -78,6 +78,7 @@ const render = () => {
         pipe[1] > flyHeight || pipe[1] + pipeGap < flyHeight + size[1]
       ].every(elem => elem)) {
         gamePlaying = false;
+        backgroundMusic.pause();
         setup();
       }
     })
